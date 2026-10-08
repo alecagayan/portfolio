@@ -22,9 +22,16 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <div class="nav-buttons">
+        <button class="edit-toggle" id="editToggle" aria-label="Toggle edit mode" title="Toggle edit mode">✎<span class="edit-toggle-label">Edit</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      </div>
     </div>
   </header>
+
+  <div class="edit-banner" id="editBanner">
+    Edit mode is on — add, replace, delete, and reorder screenshots below each project. Changes save in this browser only.
+  </div>
 
   <main id="top">
     <section class="hero container">
@@ -134,7 +141,7 @@
       <div class="container">
         <h2 class="section-title"><span>03.</span> Projects</h2>
         <div class="projects-grid">
-          <article class="project-card">
+          <article class="project-card" data-project="task-flow">
             <div class="project-top">
               <span class="folder-icon" aria-hidden="true">📁</span>
               <div class="project-links">
@@ -153,9 +160,10 @@
               <li>PostgreSQL</li>
               <li>Socket.io</li>
             </ul>
+            <div class="screenshot-scroll" data-project="task-flow"></div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-project="pathfinder-visualizer">
             <div class="project-top">
               <span class="folder-icon" aria-hidden="true">📁</span>
               <div class="project-links">
@@ -173,9 +181,10 @@
               <li>HTML Canvas</li>
               <li>CSS</li>
             </ul>
+            <div class="screenshot-scroll" data-project="pathfinder-visualizer"></div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-project="campus-marketplace-api">
             <div class="project-top">
               <span class="folder-icon" aria-hidden="true">📁</span>
               <div class="project-links">
@@ -194,9 +203,10 @@
               <li>MongoDB</li>
               <li>Docker</li>
             </ul>
+            <div class="screenshot-scroll" data-project="campus-marketplace-api"></div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-project="portfolio-site">
             <div class="project-top">
               <span class="folder-icon" aria-hidden="true">📁</span>
               <div class="project-links">
@@ -214,6 +224,7 @@
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
+            <div class="screenshot-scroll" data-project="portfolio-site"></div>
           </article>
         </div>
       </div>
@@ -242,8 +253,16 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous screenshot">&#8249;</button>
+    <img class="lightbox-img" id="lightboxImg" alt="Screenshot preview" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next screenshot">&#8250;</button>
+  </div>
+
   <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
   <script src="three-scene.js"></script>
   <script src="script.js"></script>
+  <script src="edit.js"></script>
 </body>
 </html>
