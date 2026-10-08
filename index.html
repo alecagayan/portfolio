@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alec Agayan · Software Engineer</title>
+  <meta name="description" content="Portfolio of Alec Agayan, a recent Computer Science graduate and software engineer." />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">AA<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">Hi, my name is</p>
+      <h1>Alec Agayan<span class="accent-dot">.</span></h1>
+      <p class="hero-copy">
+        I'm a recent Computer Science graduate who loves turning ideas into clean, reliable
+        applications &mdash; from full-stack web apps to small tools that make everyday
+        workflows easier. I'm looking for a software engineering role where I can keep learning
+        and ship things people actually use.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I recently graduated with a B.S. in Computer Science, where I focused on software
+              engineering, data structures &amp; algorithms, and systems design. I enjoy the full
+              lifecycle of building software: designing a solution, writing clean code, testing it
+              thoroughly, and shipping it.
+            </p>
+            <p>
+              Outside of coursework, I've worked on personal projects, contributed to open source,
+              and collaborated with classmates on team projects that mirrored real-world software
+              development. I'm a fast learner who's comfortable picking up new languages and
+              frameworks as needed.
+            </p>
+            <p>Here are a few technologies I've been working with recently:</p>
+            <ul class="about-list">
+              <li>JavaScript / TypeScript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>SQL &amp; PostgreSQL</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div class="about-photo" aria-hidden="true">
+            <div class="photo-frame">AA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>02.</span> Skills &amp; Languages</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <ul class="tag-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>C / C++</li>
+              <li>SQL</li>
+              <li>HTML &amp; CSS</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul class="tag-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Flask</li>
+              <li>JUnit</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools &amp; Platforms</h3>
+            <ul class="tag-list">
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>Linux</li>
+              <li>AWS</li>
+              <li>PostgreSQL / MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Practices</h3>
+            <ul class="tag-list">
+              <li>Data Structures &amp; Algorithms</li>
+              <li>REST APIs</li>
+              <li>Agile / Scrum</li>
+              <li>Unit Testing</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>03.</span> Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="folder-icon" aria-hidden="true">📁</span>
+              <div class="project-links">
+                <a href="#" aria-label="View source code on GitHub">GitHub</a>
+                <a href="#" aria-label="View live demo">Live</a>
+              </div>
+            </div>
+            <h3>Task Flow</h3>
+            <p>
+              A full-stack task management app with drag-and-drop boards, user authentication, and
+              real-time updates between collaborators.
+            </p>
+            <ul class="tag-list small">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+              <li>Socket.io</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="folder-icon" aria-hidden="true">📁</span>
+              <div class="project-links">
+                <a href="#" aria-label="View source code on GitHub">GitHub</a>
+                <a href="#" aria-label="View live demo">Live</a>
+              </div>
+            </div>
+            <h3>PathFinder Visualizer</h3>
+            <p>
+              An interactive tool for visualizing pathfinding algorithms like A*, Dijkstra's, and
+              BFS/DFS on a grid, built to make DSA concepts easier to understand.
+            </p>
+            <ul class="tag-list small">
+              <li>JavaScript</li>
+              <li>HTML Canvas</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="folder-icon" aria-hidden="true">📁</span>
+              <div class="project-links">
+                <a href="#" aria-label="View source code on GitHub">GitHub</a>
+                <a href="#" aria-label="View live demo">Live</a>
+              </div>
+            </div>
+            <h3>Campus Marketplace API</h3>
+            <p>
+              A RESTful API powering a student marketplace app, with JWT authentication, image
+              uploads, and search/filter endpoints. Built as a team project with an Agile workflow.
+            </p>
+            <ul class="tag-list small">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>MongoDB</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="folder-icon" aria-hidden="true">📁</span>
+              <div class="project-links">
+                <a href="#" aria-label="View source code on GitHub">GitHub</a>
+                <a href="#" aria-label="View live demo">Live</a>
+              </div>
+            </div>
+            <h3>This Portfolio Site</h3>
+            <p>
+              A responsive personal portfolio built from scratch with vanilla HTML, CSS, and
+              JavaScript &mdash; including a dark mode toggle and scroll-based animations.
+            </p>
+            <ul class="tag-list small">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title centered"><span>04.</span> Get In Touch</h2>
+        <p class="contact-copy">
+          I'm currently looking for new grad software engineering opportunities. Whether you have a
+          question, an opening on your team, or just want to say hi, my inbox is always open.
+        </p>
+        <a href="mailto:alecagayan24@gmail.com" class="btn btn-primary">Say Hello</a>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:alecagayan24@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by Alec Agayan &middot; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="three-scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
